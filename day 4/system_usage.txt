@@ -1,0 +1,1 @@
+CPU Usage        : 14.80 %Total Memory     : 15.68 GBUsed Memory      : 12.28 GBFree Memory      : 3.39 GBTotal Disk       : 260.39 GBUsed Disk        : 200.71 GBFree Disk        : 59.68 GB

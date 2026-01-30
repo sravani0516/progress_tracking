@@ -1,0 +1,5 @@
+LOG FILE ANALYSIS
+------------------
+ERROR count   : 2
+WARNING count : 1
+INFO count    : 2

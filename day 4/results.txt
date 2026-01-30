@@ -1,0 +1,10 @@
+--- File Management Report for: filess ---
+Moved: Episode 7.pdf -> Documents/
+Moved: Origin_Agile-Scrum-Workbook (2).docx -> Documents/
+Moved: Screenshot 2026-01-08 201616.png -> Images/
+Moved: Screenshot 2026-01-08 213313.png -> Images/
+Moved: Screenshot 2026-01-12 093643.png -> Images/
+Moved: Screenshot 2026-01-12 120606.png -> Images/
+Total files organized: 6
+Cleaned up text too
+

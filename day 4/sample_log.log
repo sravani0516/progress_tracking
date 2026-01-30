@@ -1,0 +1,5 @@
+Jan 12 10:15:32 server1 systemd[123]: Starting reverse mapping check  [192.168.1.10]
+Jan 12 10:16:45 server1 systemd[124]: Completed reverse mapping lookup  [10.0.0.5]
+Jan 12 10:18:07 server1 systemd[125]: reverse mapping failed for host  [172.16.0.25]
+Jan 12 10:20:19 server1 systemd[126]: reverse mapping successful  [8.8.8.8]
+Jan 12 10:21:30 server1 systemd[127]: Connection established without reverse mapping  [192.168.100.50]

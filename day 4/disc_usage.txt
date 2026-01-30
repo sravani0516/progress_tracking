@@ -1,0 +1,4 @@
+Total Storage : 260.39 GB
+Used Storage  : 203.02 GB
+Free Space    : 57.37 GB
+Used Percent  : 77.97 %
