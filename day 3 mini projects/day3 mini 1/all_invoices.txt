@@ -1,0 +1,56 @@
+
+-------- UBER RIDE INVOICE --------
+Date & Time  : 2026-01-29 11:52:27.809300
+Customer    : henry
+Phone No    : 9632145874
+Source      : Mgbs
+Destination : Jbs
+Vehicle     : Car
+Driver      : Vikas
+Distance    : 10 km
+Fare        : ₹150
+Ride Status : Completed
+----------------------------------
+
+-------- UBER RIDE INVOICE --------
+Date & Time  : 2026-01-29 11:53:45.390205
+Customer    : nikki
+Phone No    : 248954335
+Source      : Uppal
+Destination : Jbs
+Vehicle     : Auto
+Driver      : Ravi
+Distance    : 10 km
+Fare        : ₹100
+Ride Status : Completed
+----------------------------------
+
+-------- UBER RIDE INVOICE --------
+Date & Time  : 2026-01-29 12:09:40.335893
+Customer    : jenny
+Phone No    : 657685313
+Source      : Medchal
+Destination : Jbs
+Vehicle     : Car
+Driver      : Rahul
+Distance    : 10 km
+Fare        : ₹150
+Ride Status : Completed
+Feedback Rating : 4
+Comments        : good
+----------------------------------
+
+-------- UBER RIDE INVOICE --------
+Date & Time  : 2026-01-29 12:10:59.601313
+Customer    : john
+Phone No    : 5296192
+Source      : Jbs
+Destination : Mgbs
+Vehicle     : Car
+Driver      : Rahul
+Distance    : 10 km
+Fare        : ₹150
+Ride Status : Completed
+Feedback Rating : 4
+Comments        : good
+----------------------------------
