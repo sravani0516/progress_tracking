@@ -1,0 +1,13 @@
+[ Client ]
+    |
+    |  HTTP Request (GET /users)
+    |
+[ Server ]
+    |
+    |  Process logic
+    |
+[ Response ]
+    |
+    |  HTTP Response (200 OK + JSON)
+    |
+[ Client ]
