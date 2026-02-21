@@ -1,0 +1,75 @@
+1. docker run hello-world
+Docker downloads the hello-world image and prints a success message
+
+2. docker run -it ubuntu bash
+Ubuntu terminal opens inside the container
+
+3. docker run -d -p 8080:80 nginx
+Nginx container starts and web page accessible at http://localhost:8080.
+
+4. docker ps
+docker ps -a
+docker stop e90b8831a4b8   
+docker rm e90b8831a4b8   
+Displays a list of currently running containers 
+Stops the running container.
+Deletes the stopped container
+
+
+5. docker images
+Lists all Docker images
+
+docker rmi 30557a29d5ab        
+Deletes the docker image
+
+6. docker run -it python:3.11 python
+Starts an Python interpreter inside a  container.
+
+7. docker run -d \
+-p 3306:3306 \
+-e MYSQL_ROOT_PASSWORD=root \
+-e MYSQL_DATABASE=testdb \
+mysql
+MySQL database server starts and listens on port 3306.
+
+8. docker build -t python-app .
+docker run python-app
+When container runs, it prints:
+
+
+9. docker build -t flask-app .
+docker run -p 5000:5000 flask-app
+Flask server starts and displays message “Flask App Running” when accessed in browser.
+
+10. FastAPI server starts and returns JSON response:
+{"message":"FastAPI running"}
+
+11. Sets the working directory inside the container; all commands run from that directory.
+
+12. Prints the environment variable value inside the container.
+
+13. Files from host system are copied into the container successfully.
+
+14. docker run -d nginx
+Nginx container runs in detached mode.
+
+15. docker volume create myvolume
+docker run -v myvolume:/data ubuntu
+Volume is created and mounted, allowing data to persist even after container deletion.
+
+16. docker run -v $(pwd):/app ubuntu
+Host directory files are accessible inside the container at the mounted path.
+
+17. docker network create mynetwork
+docker run -d --network mynetwork --name mysql \
+-e MYSQL_ROOT_PASSWORD=root mysql
+docker run -it --network mynetwork ubuntu
+Host directory files are accessible inside the container at the mounted path.
+
+18. docker compose up
+Multiple containers (MySQL and App) start together as defined in docker-compose.yml.
+
+19. Backend and database containers start and run together,
+
+20. docker-compose up --build
+FastAPI API server and MySQL database start together and communicate internally via Docker network.

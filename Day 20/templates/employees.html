@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Directory</title>
+</head>
+<body>
+
+<h2>Employee Directory</h2>
+
+<a href="/">Students</a> |
+<a href="/todos">To-Do</a> |
+<a href="/contacts">Contacts</a> |
+<a href="/products">Products</a> |
+<a href="/blogs">Blogs</a>
+
+<br><br>
+
+<!-- Filter Links -->
+<h3>Filter by Department:</h3>
+<a href="/employees">All</a> |
+<a href="/employees?department=HR">HR</a> |
+<a href="/employees?department=IT">IT</a> |
+<a href="/employees?department=Finance">Finance</a>
+
+<br><br>
+
+<table border="1" cellpadding="10">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Department</th>
+        <th>Salary</th>
+    </tr>
+
+    {% for emp in employees %}
+    <tr>
+        <td>{{ emp.id }}</td>
+        <td>{{ emp.name }}</td>
+        <td>{{ emp.department }}</td>
+        <td>{{ emp.salary }}</td>
+    </tr>
+    {% endfor %}
+
+</table>
+
+</body>
+</html>

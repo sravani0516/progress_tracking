@@ -1,0 +1,19 @@
+<h2>Books</h2>
+
+<form action="/add-book" method="post">
+    Title: <input type="text" name="title" required>
+    Author: <input type="text" name="author" required>
+    <button>Add</button>
+</form>
+
+<table border="1">
+{% for b in books %}
+<tr>
+<td>{{ b.title }}</td>
+<td>{{ b.author }}</td>
+<td><a href="/delete-book/{{ b.id }}">Delete</a></td>
+</tr>
+{% endfor %}
+</table>
+
+<a href="/">Back</a>

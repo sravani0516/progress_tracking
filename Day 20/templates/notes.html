@@ -1,0 +1,17 @@
+<h2>Notes</h2>
+
+<form action="/add-note" method="post">
+    <textarea name="content" required></textarea>
+    <button>Add</button>
+</form>
+
+<table border="1">
+{% for n in notes %}
+<tr>
+<td>{{ n.content }}</td>
+<td><a href="/delete-note/{{ n.id }}">Delete</a></td>
+</tr>
+{% endfor %}
+</table>
+
+<a href="/">Back</a>

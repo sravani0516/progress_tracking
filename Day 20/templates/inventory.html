@@ -1,0 +1,19 @@
+<h2>Inventory</h2>
+
+<form action="/add-item" method="post">
+    Product: <input type="text" name="name" required>
+    Quantity: <input type="number" name="quantity" required>
+    <button>Add</button>
+</form>
+
+<table border="1">
+{% for i in items %}
+<tr>
+<td>{{ i.product_name }}</td>
+<td>{{ i.quantity }}</td>
+<td><a href="/delete-item/{{ i.id }}">Delete</a></td>
+</tr>
+{% endfor %}
+</table>
+
+<a href="/">Back</a>

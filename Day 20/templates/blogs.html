@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog List</title>
+</head>
+<body>
+
+<h2>Blog List</h2>
+
+<a href="/">Students</a> |
+<a href="/todos">To-Do</a> |
+<a href="/contacts">Contacts</a> |
+<a href="/products">Products</a>
+
+<br><br>
+
+<ul>
+    {% for blog in blogs %}
+        <li>
+            <a href="/blog/{{ blog.id }}">{{ blog.title }}</a>
+        </li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>

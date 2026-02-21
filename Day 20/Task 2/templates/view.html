@@ -1,0 +1,27 @@
+<h2>{{ table.capitalize() if table else "Data Output" }}</h2>
+{% if data %}
+    <table border="1">
+        <tr>
+            {% for key in data[0].keys() %}
+                <th>{{ key }}</th>
+            {% endfor %}
+            <th>Actions</th>
+        </tr>
+        {% for row in data %}
+            <tr>
+                {% for value in row.values() %}
+                    <td>{{ value }}</td>
+                {% endfor %}
+                <td>
+                    {% if table %}
+                        <a href="/{{ table }}/edit/{{ row['id'] }}">Edit</a>
+                        <a href="/{{ table }}/delete/{{ row['id'] }}">Delete</a>
+                    {% endif %}
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+{% else %}
+    No Data
+{% endif %}
+<a href="/">Back</a>
