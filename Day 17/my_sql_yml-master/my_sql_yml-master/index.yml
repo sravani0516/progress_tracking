@@ -1,0 +1,30 @@
+name:harsh
+city:hyderabad
+place:india
+username:admin
+password:123456
+port:8080
+
+user:
+  name:harsh
+  city:hyderabad
+  place:india
+  username:admin
+  password:123
+
+
+person:
+  name:harsh
+
+  city:hyderabad
+ address:
+   place:india
+   username:admin
+   password:123456
+
+
+users:
+- harsh
+- jk
+-kl
+

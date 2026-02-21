@@ -1,0 +1,28 @@
+
+
+{
+    "employee":[
+        {
+            "id":1,
+            "name":"John Doe",
+            "position":"Software Engineer",
+            "department":"IT"
+        },
+        {
+            "id":2,
+            "name":"Jane Smith",
+            "position":"Project Manager",
+            "department":"Operations"
+        },
+        {
+            "id":3,
+            "name":"Emily Johnson",
+            "position":{
+                "title":"Marketing Specialist",
+                "level":"Mid"
+            },
+            "department":"Marketing"
+        }
+    ]
+
+}

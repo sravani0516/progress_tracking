@@ -1,0 +1,4 @@
+_id,student_id,name,age,email,department_id
+69982d19d3bd113f8b3020cc,1,Asha,21,asha@gmail.com,101
+69982d19d3bd113f8b3020cd,2,Ravi,23,ravi@gmail.com,102
+69982d19d3bd113f8b3020ce,3,Meena,19,meena@gmail.com,101
