@@ -1,0 +1,40 @@
+
+{% extends 'base.html' %}
+{% block content %}
+<h3>Dashboard</h3>
+
+<form method="GET" class="row mb-3">
+<div class="col"><input name="search" class="form-control" placeholder="Search"></div>
+<div class="col"><input name="min_price" class="form-control" placeholder="Min Price"></div>
+<div class="col"><button class="btn btn-primary">Filter</button></div>
+</form>
+
+{% if session.get('role') == 'admin' %}
+<a href="/add-product" class="btn btn-success mb-3">Add Product</a>
+{% endif %}
+
+<div class="row">
+{% for item in items %}
+<div class="col-md-4">
+<div class="card shadow mb-4">
+{% if item.image %}
+<img src="/static/uploads/{{item.image}}" class="card-img-top" style="height:200px;object-fit:cover;">
+{% endif %}
+<div class="card-body">
+<h5>{{item.name}}</h5>
+<p>{{item.description}}</p>
+<h6>₹{{item.price}}</h6>
+{% if session.get('role') == 'user' %}
+<a href="/add-to-cart/{{item.id}}" class="btn btn-primary btn-sm">Add to Cart</a>
+{% endif %}
+</div>
+</div>
+</div>
+{% endfor %}
+</div>
+
+{% if session.get('role') == 'user' %}
+<a href="/checkout" class="btn btn-warning">Go to Checkout</a>
+{% endif %}
+
+{% endblock %}
