@@ -1,0 +1,17 @@
+
+{% extends 'base.html' %}
+{% block content %}
+<h3>Checkout</h3>
+<ul class="list-group mb-3">
+{% for item in items %}
+<li class="list-group-item d-flex justify-content-between">
+{{item.name}} - ₹{{item.price}}
+<a href="/remove-from-cart/{{item.id}}" class="btn btn-danger btn-sm">Remove</a>
+</li>
+{% endfor %}
+</ul>
+<h4>Total: ₹{{total}}</h4>
+<form method="POST" action="/payment">
+<button class="btn btn-success">Pay Now</button>
+</form>
+{% endblock %}
