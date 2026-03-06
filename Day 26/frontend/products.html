@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="p-4">
+<h2>Products</h2>
+<button class="btn btn-primary" onclick="loadProducts()">Load Products</button>
+<table class="table mt-3" id="table"></table>
+
+<script>
+async function loadProducts(){
+    const res = await fetch("http://localhost:8000/products");
+    const data = await res.json();
+    let table = "<tr><th>ID</th><th>Name</th><th>Price</th><th>Qty</th></tr>";
+    data.forEach(p => {
+        table += `<tr><td>${p.id}</td><td>${p.name}</td><td>${p.price}</td><td>${p.quantity}</td></tr>`;
+    });
+    document.getElementById("table").innerHTML = table;
+}
+</script>
+</body>
+</html>
